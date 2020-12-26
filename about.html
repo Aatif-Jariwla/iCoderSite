@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>iCoding Site</title>
+    <link class=" border rounded-circle" rel="icon" href="AJ.jpg" type="image/x-icon">
+</head>
+
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                iCoder Site
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Languages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://www.microsoft.com/en-in/">Microsoft</a></li>
+                            <li><a class="dropdown-item" href="https://www.python.org/">Python </a></li>
+                            <li><a class="dropdown-item" href="https://www.php.net/">Php </a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Others</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger mx-3" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        Login
+                    </button>
+                    <!-- Login Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-dark text-center" id="loginModalLabel">Login</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <div class="form-group">
+                                        <label for="email">Email Id</label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            aria-describedby="emailHelpId" placeholder="Enter your email id">
+                                    </div>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <div class="form-group text-dark">
+                                        <label for="pass">Password</label>
+                                        <input type="password" class="form-control" name="pass" id="pass"
+                                            placeholder="Enter your password">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger ml-3" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        Signup
+                    </button>
+                    <!-- Signup Modal -->
+                    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title text-dark text-center" id="signupModalLabel">Signup to Our
+                                        Page</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <div class="form-group">
+                                        <label for="name"> Username</label>
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            aria-describedby="helpId" placeholder="Please Enter Your Name Brother">
+                                    </div>
+
+
+                                    <div class="form-group my-2">
+                                        <label for="name"> First Name</label>
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            aria-describedby="helpId" placeholder="Please Enter Your Name">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="name"> Last Name</label>
+                                        <input type="text" class="form-control" name="name" id="name"
+                                            aria-describedby="helpId" placeholder="Please Enter Your Name">
+                                    </div>
+
+
+                                    <div class="form-group my-2">
+                                        <label for="email">Email Id</label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            aria-describedby="emailHelpId" placeholder="Enter your email id">
+                                        <button class="btn btn-danger my-2">Send OTP</button>
+                                    </div>
+
+
+                                    <div class="form-group my-2">
+                                        <label for="otp">Enter OTP</label>
+                                        <input type="text" class="form-control" name="otp" id="otp"
+                                            aria-describedby="helpId" placeholder="Enter OTP">
+                                    </div>
+
+
+                                    <div class="form-group text-dark my-2">
+                                        <label for="pass">Password</label>
+                                        <input type="password" class="form-control" name="pass" id="pass"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <div class="form-group text-dark my-2">
+                                        <label for="cpass"> Confirm Password</label>
+                                        <input type="password" class="form-control" name="cpass" id="cpass"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline"
+                                                href="#">
+                                                <img src="https://img.icons8.com/color/16/000000/google-logo.png"
+                                                    alt=""> Signup Using Google
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <p class="text-inverse text-center">Already have an account?
+                                        <a href="#">Login</a>
+                                    </p>
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Signup</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- about slide-->
+    <div class="container my-4">
+        <div class="row featurette my-4">
+            <div class="col-md-7 py-5">
+                <h2 class="featurette-heading">Microsoft <span class="text-muted">It’ll blow your
+                        mind.</span></h2>
+                <p class="lead">Microsoft Corporation (NASDAQ:MSFT) is a company that makes computer software and video
+                    games for users around the world. Bill Gates and Paul Allen founded the company in 1975. ... Some
+                    products (like the Windows operating system) are often already installed when people buy a new
+                    computer.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="https://www.microsoft.com/en-in/"><img
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width=300
+                        height=300 src="microsoft.jpg" alt=""></a>
+
+
+            </div>
+        </div>
+        <div class="row featurette my-4 ">
+            <div class="col-md-7 order-md-2 py-5">
+                <h2 class="featurette-heading">Python <span class="text-muted">See for
+                        yourself.</span></h2>
+                <p class="lead ">Python is a programming language that lets you work more quickly and integrate your
+                    systems more effectively.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <a href="https://www.python.org/"><img
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width=300
+                        height=300 src="python.jpeg" alt=""></a>
+
+            </div>
+        </div>
+        <div class="row featurette my-4">
+            <div class="col-md-7 py-5">
+                <h2 class="featurette-heading">
+                    <span class="text-muted">It’ll blow your
+                        mind.</span>
+                </h2>
+                <p class="lead">PHP is a recursive acronym for "PHP: Hypertext Preprocessor". PHP is a server side
+                    scripting language that is embedded in HTML. It is used to manage dynamic content, databases,
+                    session tracking, even build entire e-commerce sites.</p>
+            </div>
+            <div class="col-md-5">
+                <a href="https://www.php.net/"><img
+                        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width=300
+                        height=300 src="php.png" alt=""></a>
+
+
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="container-fluid bg-dark p-5">
+        <div class="row text-center">
+            <!--1st Column-->
+            <div class="col-md-3 col-sm-6 py-3">
+                <a href="#" style="text-decoration: none; color: white;">
+                    <h3>iCODING</h3><br>
+                </a>
+                <a href="#" style="text-decoration: none; color: aqua;">
+                    <h5>Blog</h5>
+                </a>
+                <a href="https://discord.gg/53fyn82K" style="text-decoration: none; color: aqua;">
+                    <h5>Discord Server</h5>
+                </a>
+                <a href="https://www.youtube.com/channel/UCQ5SrB7iSvd4TAHF0lw39ig"
+                    style="text-decoration: none; color: aqua;">
+                    <h5>YouTube Channel</h5>
+                </a>
+            </div>
+
+            <!--2nd Column-->
+            <div class="col-md-3 col-sm-6 py-3">
+                <a href="#" style="text-decoration: none; color: white;">
+                    <h3>PRODUCTS</h3><br>
+                </a>
+                <a href="#" style="text-decoration: none; color: aqua;">
+                    <h5>Learning Paths</h5>
+                </a>
+                <a href="https://www.codewithharry.com/videos/" style="text-decoration: none; color: aqua;;">
+                    <h5>Video Courses</h5>
+                </a>
+                <a href="#" style="text-decoration:none; color: aqua;">
+                    <h5>Enterprise Solutions</h5>
+                </a>
+            </div>
+
+            <!--3rd Column-->
+            <div class="col-md-3 col-sm-6 py-3">
+                <a href="#" style="text-decoration: none; color: white;">
+                    <h3>COMPANY</h3><br>
+                </a>
+                <a href="about.html" style="text-decoration: none; color: aqua;">
+                    <h5>About</h5>
+                </a>
+                <a href="privacy.html" style="text-decoration: none; color: aqua;">
+                    <h5>Privacy Policy</h5>
+                </a>
+                <a href="#contact" style="text-decoration: none; color: aqua;">
+                    <h5>Contact Us</h5>
+                </a>
+            </div>
+
+            <!--4th Column-->
+            <div class="col-md-3 col-sm-6 py-3">
+                <a href="#" style="text-decoration: none; color:white">
+                    <h3>SOCIAL</h3><br>
+                </a>
+                <a href="https://www.facebook.com/aatif.jariwala/" style="text-decoration: none; padding: 10px;">
+                    <em class="fa fa-facebook-square" style="font-size:48px;color:#0d6efd;"></em>
+                </a>
+                <a href="https://www.instagram.com/aatifjariwala/" style="text-decoration: none; padding: 10px;">
+                    <em class="fa fa-instagram" style="font-size:48px;color: #8a3ab9"></em>
+                </a>
+                <a href="#contact" style="text-decoration: none; padding: 10px;">
+                    <em class="fa fa-phone" style="font-size:48px;color:#198754"></em>
+                </a>
+                <p class="text-warning my-4">© 2020–2021 Company Name</p>
+
+            </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
